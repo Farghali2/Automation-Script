@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-08T14:43:26 EET" name="Default suite" finished-at="2022-04-08T14:44:49 EET" duration-ms="82829">
+  <suite started-at="2022-04-13T14:59:18 EET" name="Default suite" finished-at="2022-04-13T15:03:31 EET" duration-ms="252943">
     <groups>
     </groups>
-    <test started-at="2022-04-08T14:43:26 EET" name="Default test" finished-at="2022-04-08T14:44:49 EET" duration-ms="82829">
+    <test started-at="2022-04-13T14:59:18 EET" name="Default test" finished-at="2022-04-13T15:03:31 EET" duration-ms="252943">
       <class name="Tests.CreateNewProduct">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:Tests.CreateNewProduct@1b11171f]" started-at="2022-04-08T14:43:26 EET" name="beforeSuite" finished-at="2022-04-08T14:43:26 EET" duration-ms="490" status="PASS">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:Tests.CreateNewProduct@2dc54ad4]" started-at="2022-04-13T14:59:18 EET" name="beforeSuite" finished-at="2022-04-13T14:59:18 EET" duration-ms="422" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Tests.CreateNewProduct@1b11171f]" started-at="2022-04-08T14:43:26 EET" name="beforeMethod" finished-at="2022-04-08T14:43:40 EET" duration-ms="13266" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Tests.CreateNewProduct@2dc54ad4]" started-at="2022-04-13T14:59:18 EET" name="beforeMethod" finished-at="2022-04-13T14:59:31 EET" duration-ms="12886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="test2(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Tests.CreateNewProduct@1b11171f]" started-at="2022-04-08T14:43:40 EET" name="test2" data-provider="test-data2" finished-at="2022-04-08T14:44:49 EET" duration-ms="69513" status="FAIL">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:Tests.CreateNewProduct@2dc54ad4]" started-at="2022-04-13T14:59:31 EET" name="test" data-provider="test-data" finished-at="2022-04-13T15:00:27 EET" duration-ms="55794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Noana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FarghaliDescriptionCat1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="test2(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Tests.CreateNewProduct@2dc54ad4]" started-at="2022-04-13T15:00:27 EET" name="test2" data-provider="test-data2" finished-at="2022-04-13T15:01:48 EET" duration-ms="80761" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,28 +61,49 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:Tests.CreateNewProduct@2dc54ad4]" started-at="2022-04-13T15:01:48 EET" name="test3" data-provider="test-data3" finished-at="2022-04-13T15:03:31 EET" duration-ms="103445" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xCouponFar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xFarghaliDistCode]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1050]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//A[@href='https://KSPJPJ1448.expandcart.com/admin/sale/coupon/insert']"}
   (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'FARGHALI', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f268e6f21dfe6ffb75c458b93f529c7, sendKeysToElement {id=f2c083da-dac6-47dc-b150-99cc5e1ab914, value=[Ljava.lang.CharSequence;@abbe000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\EXPAND\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61882/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (9f268e6f21dfe6ffb75c458b93f529c7)] -> xpath: //DIV[@id='product-dropzone']]
-Session ID: 9f268e6f21dfe6ffb75c458b93f529c7]]>
+Command: [7cfe49674779cc1f4cf503c8903bc1f3, findElement {using=xpath, value=//A[@href='https://KSPJPJ1448.expandcart.com/admin/sale/coupon/insert']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\EXPAND\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58299/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7cfe49674779cc1f4cf503c8903bc1f3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//A[@href='https://KSPJPJ1448.expandcart.com/admin/sale/coupon/insert']"}
   (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'FARGHALI', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f268e6f21dfe6ffb75c458b93f529c7, sendKeysToElement {id=f2c083da-dac6-47dc-b150-99cc5e1ab914, value=[Ljava.lang.CharSequence;@abbe000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\EXPAND\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61882/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (9f268e6f21dfe6ffb75c458b93f529c7)] -> xpath: //DIV[@id='product-dropzone']]
-Session ID: 9f268e6f21dfe6ffb75c458b93f529c7
+Command: [7cfe49674779cc1f4cf503c8903bc1f3, findElement {using=xpath, value=//A[@href='https://KSPJPJ1448.expandcart.com/admin/sale/coupon/insert']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\EXPAND\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58299/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7cfe49674779cc1f4cf503c8903bc1f3
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -79,11 +116,13 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-at Pages.PageBase.SendValues(PageBase.java:41)
-at Pages.ProductPage.CreateProduct(ProductPage.java:38)
-at Tests.CreateNewProduct.test2(CreateNewProduct.java:59)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at Pages.PageBase.click(PageBase.java:24)
+at Pages.CouponPage.CreateCoupon(CouponPage.java:28)
+at Tests.CreateNewProduct.test3(CreateNewProduct.java:79)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,11 +153,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tests.CreateNewProduct@1b11171f]" started-at="2022-04-08T14:44:49 EET" name="afterMethod" finished-at="2022-04-08T14:44:49 EET" duration-ms="0" status="PASS">
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tests.CreateNewProduct@2dc54ad4]" started-at="2022-04-13T15:03:31 EET" name="afterMethod" finished-at="2022-04-13T15:03:31 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

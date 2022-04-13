@@ -6,9 +6,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends PageBase {
 	
-	public void click(By ele) {
-		driver.findElement(ele).click();		
-	}
 
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
@@ -19,6 +16,7 @@ public class HomePage extends PageBase {
 	@FindBy(partialLinkText = "https://kspjpj1448.expandcart.com/admin/catalog/component/collection")
 	By CollectionTab;
 	private By AllProductTab = By.xpath("//A[@href='https://KSPJPJ1448.expandcart.com/admin/catalog/product'][text()='All Products']");
+	private By MarktingTab = By.xpath("//A[@href=''][text()='Discount Coupons']");
 	
 	
 	
@@ -28,13 +26,17 @@ public class HomePage extends PageBase {
 	}
 	
 	public void CreatePro() {
-		WaitForClick(HomeButton);
 		click(HomeButton);
-		WaitForClick(ProductsTab);
 		click(ProductsTab);
-		driver.get("https://kspjpj1448.expandcart.com/admin/catalog/product");
-//		WaitForClick(AllProductTab);
-//		click(AllProductTab);															
+		driver.get("https://kspjpj1448.expandcart.com/admin/catalog/product");														
 	}
+	
+	public void CouponPage() {
+		click(HomeButton);
+		//click(MarktingTab);
+		driver.get("https://KSPJPJ1448.expandcart.com/admin/sale/coupon");	
+	}
+	
+	
 	
 }

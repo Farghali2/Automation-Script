@@ -5,9 +5,9 @@
     <classes>
       <class name="Tests.CreateNewProduct">
         <methods>
-          <include name="test2" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
+          <include name="test3" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- Tests.CreateNewProduct -->

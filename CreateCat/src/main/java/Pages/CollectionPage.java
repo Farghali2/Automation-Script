@@ -38,7 +38,7 @@ public class CollectionPage extends PageBase{
 		Wait5s();
 		List<WebElement> elementsName = driver.findElements(CustomerCol);
 		for (WebElement elementName: elementsName) {
-			System.out.println(elementName.getText());
+		//	System.out.println(elementName.getText());
 		    if(elementName.getText().equals(CatName)) 
 		        return true;
 		}return false;	

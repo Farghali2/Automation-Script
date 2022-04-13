@@ -25,7 +25,7 @@ public class PageBase {
 	}
 	
 	public void click2(By ele){
-		WaitForClick(ele);
+	WaitForClick(ele);
 	JavascriptExecutor executor = (JavascriptExecutor)driver;
 	WebElement Webele =driver.findElement(ele);
 	executor.executeScript("arguments[0].click();", Webele);
@@ -58,7 +58,7 @@ public class PageBase {
 	public void Wait5s() {
 		By Sxpath = By.xpath("//A[text()=' mmCdfdsfancel']");
 		try {
-			new WebDriverWait(driver, Duration.ofSeconds(5, 1)).until(ExpectedConditions.visibilityOf(driver.findElement(Sxpath)));
+			new WebDriverWait(driver, Duration.ofSeconds(2, 1)).until(ExpectedConditions.visibilityOf(driver.findElement(Sxpath)));
 
 		}
 		catch (Exception e) {

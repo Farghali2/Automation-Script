@@ -51,7 +51,7 @@ public class ProductPage extends PageBase{
 		Wait5s();
 		List<WebElement> elementsName = driver.findElements(ProductCol);
 		for (WebElement elementName: elementsName) {
-			System.out.println(elementName.getText());
+			//System.out.println(elementName.getText());
 		    if(elementName.getText().equals(PordName)) 
 		        return true;
 		}return false;
