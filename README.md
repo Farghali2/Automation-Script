@@ -1,4 +1,7 @@
 
 
 # Automation-Script
-Craete Category + Product with validations
+
+1-Craete Category with Creation validation
+2-Product with validations with Creation validation
+3-Create Coupon with Creation validation
