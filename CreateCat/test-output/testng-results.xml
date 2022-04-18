@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-18T01:53:58 EET" name="Default suite" finished-at="2022-04-18T01:55:45 EET" duration-ms="106925">
+    <groups>
+    </groups>
+    <test started-at="2022-04-18T01:53:58 EET" name="Default test" finished-at="2022-04-18T01:55:45 EET" duration-ms="106925">
+      <class name="Tests.CreateNewProduct">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:Tests.CreateNewProduct@55634720]" started-at="2022-04-18T01:53:58 EET" name="beforeSuite" finished-at="2022-04-18T01:53:58 EET" duration-ms="479" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Tests.CreateNewProduct@55634720]" started-at="2022-04-18T01:53:58 EET" name="beforeMethod" finished-at="2022-04-18T01:54:17 EET" duration-ms="18278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test3(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:Tests.CreateNewProduct@55634720]" started-at="2022-04-18T01:54:17 EET" name="test3" data-provider="test-data3" finished-at="2022-04-18T01:54:59 EET" duration-ms="41789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CouponFarw1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FarghaliDistw1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1050]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Tests.CreateNewProduct@55634720]" started-at="2022-04-18T01:54:59 EET" name="test4" data-provider="test-data3" finished-at="2022-04-18T01:55:45 EET" duration-ms="46806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CouponFarw1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FarghaliDistw1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1050]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tests.CreateNewProduct@55634720]" started-at="2022-04-18T01:55:45 EET" name="afterMethod" finished-at="2022-04-18T01:55:45 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Tests.CreateNewProduct -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
